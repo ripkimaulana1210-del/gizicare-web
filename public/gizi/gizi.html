@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pencatatan Gizi Balita - GiziCare</title>
+    <link rel="stylesheet" href="gizi-style.css">
+    <script defer src="gizi.js"></script>
+</head>
+
+<body>
+
+    <h2>Pencatatan Gizi Balita</h2>
+
+    <!-- FORM INPUT -->
+    <form id="giziForm">
+        <input type="text" id="nama" placeholder="Nama Balita" required>
+
+        <select id="jenis_kelamin" required>
+            <option value="">Jenis Kelamin</option>
+            <option value="L">Laki-laki</option>
+            <option value="P">Perempuan</option>
+        </select>
+
+        <input type="number" id="usia_bulan" placeholder="Usia (bulan)" required>
+        <input type="number" step="0.1" id="berat_badan" placeholder="Berat badan (kg)" required>
+        <input type="number" step="0.1" id="tinggi_badan" placeholder="Tinggi badan (cm)" required>
+        <input type="number" step="0.1" id="lingkar_kepala" placeholder="Lingkar kepala (opsional)">
+
+        <button type="submit" class="btn-save">Simpan</button>
+    </form>
+
+    <hr>
+
+    <!-- TABLE RIWAYAT -->
+    <h3 class="history-title">Riwayat Data</h3>
+
+    <table class="history-table" id="dataList">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>JK</th>
+                <th>Usia</th>
+                <th>Berat</th>
+                <th>Tinggi</th>
+                <th>Lingkar</th>
+                <th>Status Gizi</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+</body>
+
+</html>

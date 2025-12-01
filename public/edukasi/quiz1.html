@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Quiz Gizi Dasar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">GiziCare App</div>
+
+<div class="container">
+  <h1>Quiz Gizi Dasar</h1>
+
+  <div id="quiz"></div>
+  <button onclick="checkQuiz()">Cek Jawaban</button>
+  <p id="result"></p>
+
+</div>
+
+<script>
+const quiz = [
+  { q: "Nutrisi utama sumber energi adalah?", a: "Karbohidrat", o: ["Protein","Vitamin","Karbohidrat"] },
+  { q: "Sayur & buah kaya akan?", a: "Vitamin", o: ["Lemak","Vitamin","Garam"] },
+  { q: "Zat pembangun tubuh adalah?", a: "Protein", o: ["Protein","Karbohidrat","Air"] }
+];
+
+let html = "";
+quiz.forEach((item, i) => {
+  html += `<p>${i+1}. ${item.q}</p>`;
+  item.o.forEach(opt => {
+    html += `<label><input type="radio" name="q${i}" value="${opt}"> ${opt}</label><br>`;
+  });
+});
+document.getElementById("quiz").innerHTML = html;
+
+function checkQuiz() {
+  let score = 0;
+  quiz.forEach((q, i) => {
+    const ans = document.querySelector(`input[name="q${i}"]:checked`);
+    if (ans && ans.value === q.a) score++;
+  });
+  document.getElementById("result").innerText = `Nilai kamu: ${score}/${quiz.length}`;
+}
+</script>
+
+</body>
+</html>

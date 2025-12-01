@@ -1,0 +1,102 @@
+.history-title {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0b5d27;
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.history-table th {
+    background: #0b5d27;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.history-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.history-table tr:nth-child(even) {
+    background: #f7f7f7;
+}
+
+.btn-delete {
+    background: #c62828;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background: #9a1f1f;
+}
+
+.gizi-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gizi-table thead {
+    background: #006400;
+    color: white;
+}
+
+.gizi-table th,
+.gizi-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.gizi-table tr:hover {
+    background: #f7fff5;
+    transition: 0.3s;
+}
+
+.gizi-table td:first-child {
+    font-weight: bold;
+}
+
+.gizi-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.gizi-table th, .gizi-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.gizi-table th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.gizi-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.gizi-table tr:hover {
+  background-color: #e8f7ff;
+}

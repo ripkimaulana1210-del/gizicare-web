@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Cegah Stunting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar">GiziCare App</div>
+
+    <div class="container">
+        <h1>Quiz Cegah Stunting</h1>
+
+        <div id="quiz"></div>
+        <button onclick="checkQuiz()">Cek Jawaban</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        const quiz = [
+            { q: "Stunting disebabkan oleh?", a: "Kurang gizi kronis", o: ["Kurang tidur", "Kurang gizi kronis", "Kurang olahraga"] },
+            { q: "MPASI diberikan mulai usia?", a: "6 bulan", o: ["3 bulan", "6 bulan", "1 tahun"] },
+            { q: "Makanan anti stunting:", a: " Protein hewani", o: ["Kerupuk", "Protein hewani", "Gula"] }
+        ];
+
+        let html = "";
+        quiz.forEach((item, i) => {
+            html += `<p>${i + 1}. ${item.q}</p>`;
+            item.o.forEach(opt => {
+                html += `<label><input type="radio" name="q${i}" value="${opt}"> ${opt}</label><br>`;
+            });
+        });
+        document.getElementById("quiz").innerHTML = html;
+
+        function checkQuiz() {
+            let score = 0;
+            quiz.forEach((q, i) => {
+                const ans = document.querySelector(`input[name="q${i}"]:checked`);
+                if (ans && ans.value === q.a) score++;
+            });
+            document.getElementById("result").innerText = `Nilai kamu: ${score}/${quiz.length}`;
+        }
+    </script>
+
+</body>
+
+</html>

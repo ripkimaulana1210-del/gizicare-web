@@ -4,6 +4,8 @@ import path from "path";
 import { fileURLToPath } from "url";
 import db from "./config/db.js";
 import authRoutes from "./routes/authRoutes.js";
+import giziRoutes from "./routes/giziRoutes.js";
+
 
 // Fix __dirname (karena ESM tidak punya fitur ini)
 const __filename = fileURLToPath(import.meta.url);
@@ -26,6 +28,7 @@ db.getConnection((err, conn) => {
 
 // ROUTES
 app.use("/api/auth", authRoutes);
+app.use("/api/gizi", giziRoutes);
 
 // STATIC FILE (public)
 app.use(express.static(path.join(__dirname, "public")));
