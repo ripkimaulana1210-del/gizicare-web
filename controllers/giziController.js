@@ -1,5 +1,6 @@
 import db from "../config/db.js";
 
+
 // --- Fungsi Hitung Status Gizi ---
 function hitungStatusGizi(usia, jenisKelamin, berat) {
 
@@ -64,3 +65,42 @@ export const getRecords = (req, res) => {
         res.json(result);
     });
 };
+
+export const updateRecord = (req, res) => {
+    const { nama, jenis_kelamin, usia_bulan, berat_badan, tinggi_badan, lingkar_kepala } = req.body;
+
+    const status_gizi = hitungStatusGizi(usia_bulan, jenis_kelamin, berat_badan);
+
+    db.query(
+        `UPDATE balita SET nama=?, jenis_kelamin=?, usia_bulan=?, berat_badan=?, tinggi_badan=?, lingkar_kepala=?, status_gizi=? WHERE id=?`,
+        [nama, jenis_kelamin, usia_bulan, berat_badan, tinggi_badan, lingkar_kepala, status_gizi, req.params.id],
+        (err) => {
+            if (err) return res.status(500).json({ message: "Database error" });
+            res.json({ message: "Data berhasil diperbarui!", status_gizi });
+        }
+    );
+};
+
+export const getOneRecord = (req, res) => {
+    db.query(
+        "SELECT * FROM balita WHERE id = ?",
+        [req.params.id],
+        (err, result) => {
+            if (err) return res.status(500).json({ message: "Database error" });
+
+            if (result.length === 0) {
+                return res.status(404).json({ message: "Data tidak ditemukan" });
+            }
+
+            res.json(result[0]);
+        }
+    );
+};
+
+export const deleteRecord = (req, res) => {
+    db.query("DELETE FROM balita WHERE id=?", [req.params.id], (err) => {
+        if (err) return res.status(500).json({ message: "Database error" });
+        res.json({ message: "Data berhasil dihapus!" });
+    });
+};
+

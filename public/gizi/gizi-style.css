@@ -76,27 +76,54 @@
 }
 
 .gizi-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-.gizi-table th, .gizi-table td {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: center;
+.gizi-table th,
+.gizi-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
 }
 
 .gizi-table th {
-  background-color: #4CAF50;
-  color: white;
-  font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
 }
 
 .gizi-table tr:nth-child(even) {
-  background-color: #f9f9f9;
+    background-color: #f9f9f9;
 }
 
 .gizi-table tr:hover {
-  background-color: #e8f7ff;
+    background-color: #e8f7ff;
+}
+
+.edit-btn {
+    background: #007bff;
+    border: none;
+    padding: 4px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background: #0056b3;
+}
+
+.filter-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filter-box input,
+.filter-box select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
