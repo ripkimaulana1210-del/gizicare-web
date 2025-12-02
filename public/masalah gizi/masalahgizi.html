@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <title>GiziCare — Deteksi Masalah Gizi (AI Lokal)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="masalah.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h2>Deteksi Masalah Gizi</h2>
+      <p>Ketik gejala kamu (kalimat bebas). Sistem akan menanyakan bila perlu.</p>
+    </header>
+
+    <main id="output" class="output" aria-live="polite"></main>
+
+    <div class="input-area">
+      <input id="userInput" type="text" placeholder="Contoh: sering pusing, lelah, nafsu makan turun" />
+      <button id="sendBtn">Kirim</button>
+    </div>
+
+    <footer class="footer-note">
+      <small>AI ini untuk saran gizi dasar — bukan pengganti pemeriksaan medis.</small>
+    </footer>
+  </div>
+
+  <script src="masalah.js"></script>
+</body>
+
+</html>
