@@ -1,78 +1,157 @@
+/* ===================================
+   GLOBAL STYLE
+=================================== */
 body {
-  font-family: Arial, sans-serif;
-  background: #f3f4f6;
   margin: 0;
   padding: 0;
+  font-family: "Arial", sans-serif;
+  background: #eef1f4;
 }
 
-.card {
-  width: 350px;
-  margin: 70px auto;
-  background: #fff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+/* ===================================
+   WRAPPER UTAMA
+=================================== */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-h2 {
+/* ===================================
+   CARD LOGIN DESKTOP
+=================================== */
+.login-card {
+  width: 450px;
+  background: #ffffff;
+  padding: 45px 40px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
   text-align: center;
-  margin-bottom: 20px;
 }
 
+/* ===================================
+   TITLE + SUBTITLE
+=================================== */
+.title {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #0b6623;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* ===================================
+   INPUT GROUP
+=================================== */
 .input-group {
-  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  background: #f0f2f5;
+  border-radius: 10px;
+  padding: 12px 15px;
+  margin-bottom: 18px;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
 }
 
-.input-group label {
-  font-weight: bold;
-  display: block;
-  margin-bottom: 5px;
+.input-group:hover {
+  border-color: #0b6623;
+}
+
+.material-icon {
+  font-size: 18px;
+  margin-right: 10px;
+  opacity: 0.7;
 }
 
 .input-group input {
   width: 100%;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  outline: none;
 }
 
+/* ===================================
+   BUTTON
+=================================== */
 .btn {
   width: 100%;
-  padding: 10px;
-  background: #44a8f0;
-  color: white;
+  padding: 13px;
+  margin-top: 10px;
+  font-size: 17px;
+  border-radius: 10px;
   border: none;
-  border-radius: 6px;
   cursor: pointer;
-  font-size: 16px;
+  transition: 0.2s ease;
 }
 
-.btn:hover {
-  background: #1e90ff;
+.primary {
+  background: #0b6623;
+  color: white;
 }
 
-.text-center {
-  text-align: center;
-  margin-top: 15px;
+.primary:hover {
+  background: #09501c;
 }
 
-a {
-  color: #1e88e5;
+/* ===================================
+   LINK AREA
+=================================== */
+.bottom-links {
+  margin-top: 20px;
+}
+
+.small-link {
+  font-size: 14px;
+  color: #0b6623;
+  display: inline-block;
+  margin-bottom: 12px;
   text-decoration: none;
 }
 
-a:hover {
+.small-link:hover {
   text-decoration: underline;
 }
 
-.article {
-  width: 90%;
-  max-width: 800px;
-  margin: 40px auto;
+.bottom-links a {
+  color: #0b6623;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.article-img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
+.bottom-links a:hover {
+  text-decoration: underline;
+}
+
+/* WRAPPER REGISTER */
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* CARD REGISTER */
+.register-card {
+  width: 500px;
+  background: #ffffff;
+  padding: 45px 40px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Profile Circle untuk Register */
+.register-card .profile-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #6d6f75;
+  margin: 0 auto 25px;
 }

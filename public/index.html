@@ -11,27 +11,98 @@
 
   <!-- NAVBAR -->
   <div class="navbar">
-    <div class="logo">
-      <a href="index.html">GiziCare</a>
-    </div>
+    <div class="logo">GiziCare</div>
 
     <div class="nav-menu">
-      <a href="login.html">Login</a>
-      <a href="register.html">Register</a>
+      <a href="index.html">Home</a>
       <a href="edukasi/edukasi.html">Edukasi</a>
-      <a href="gizi/gizi.html">Gizi</a>
-      <a href="masalah/masalah.html">Masalah Gizi</a>
+      <a href="gizi/gizi.html">Pencatatan Data</a>
+      <a href="masalah gizi/masalahgizi.html">Masalah Gizi</a>
+      <a href="auth/login.html" class="profile-icon">👤</a>
+      <a href="#" class="notif-icon">🔔</a>
     </div>
   </div>
 
-  <!-- HERO -->
-  <div class="hero">
-    <h1>GiziCare</h1>
-    <p>Media edukasi gizi digital berbasis web</p>
+  <!-- CONTAINER -->
+  <div class="container">
 
-    <a href="edukasi/edukasi.html" class="btn">Mulai Belajar Edukasi</a>
-    <a href="gizi/gizi.html" class="btn">Belajar Gizi</a>
-    <a href="masalah gizi/masalahgizi.html" class="btn">Pelajari Masalah Gizi</a>
+    <!-- RINGKASAN HARI INI -->
+    <h2>Ringkasan Hari Ini</h2>
+
+    <div class="summary-grid">
+
+      <div class="card summary">
+        <img src="img/kalori.png" class="icon">
+        <p class="title">Kalori</p>
+        <p class="value">1200 / 2000 kkal</p>
+      </div>
+
+      <div class="card summary">
+        <img src="img/water.png" class="icon">
+        <p class="title">Air</p>
+        <p class="value">1.5L / 2.5L</p>
+      </div>
+
+      <div class="card summary small">
+        <p class="title">Langkah</p>
+        <p class="value steps">5432</p>
+      </div>
+
+      <div class="card summary small">
+        <p class="title">Tidur</p>
+        <p class="value">7j 30m</p>
+      </div>
+
+    </div>
+
+    <!-- RENCANA MAKAN -->
+    <h2>Rencana Makan Hari Ini</h2>
+
+    <div class="meal-grid">
+      <div class="card meal">
+        <img src="img/breakfast.jpg">
+        <h3>Sarapan</h3>
+        <p>10 Alant 2024</p>
+      </div>
+
+      <div class="card meal">
+        <img src="img/lunch.jpg">
+        <h3>Makan Siang</h3>
+        <p>18 Alant 2024</p>
+      </div>
+
+      <div class="card meal">
+        <img src="img/dinner.jpg">
+        <h3>Makan Malam</h3>
+        <p>22 Alant 2024</p>
+      </div>
+    </div>
+
+    <!-- ARTIKEL -->
+    <h2>Artikel Kesehatan Terbaru</h2>
+
+    <div class="article-grid">
+
+      <div class="card article">
+        <img src="img/salmon.jpg">
+        <h3>Artikel Kesehatan</h3>
+        <p>36 Kularu 2023</p>
+      </div>
+
+      <div class="card article">
+        <img src="img/salad.jpg">
+        <h3>Bahkisi Makanan</h3>
+        <p>30 Kularu 2023</p>
+      </div>
+
+      <div class="card article">
+        <img src="img/vegan.jpg">
+        <h3>Menjaga Kesehatan</h3>
+        <p>30 Kularu 2023</p>
+      </div>
+
+    </div>
+
   </div>
 
 </body>
