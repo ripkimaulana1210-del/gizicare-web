@@ -2,6 +2,8 @@ import db from "../config/db.js";
 import bcrypt from "bcryptjs";
 import { sendOTP } from "../utils/sendEmail.js";
 
+
+//omar
 // REGISTER
 export const register = (req, res) => {
   const { username, email, password, confirmPassword } = req.body;
