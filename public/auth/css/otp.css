@@ -1,0 +1,85 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body background */
+body {
+  background: #eef7f1; /* hijau muda lembut */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card */
+.card {
+  background: white;
+  width: 360px;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* Heading */
+.card h2 {
+  margin-bottom: 10px;
+  color: #2d6a4f; /* hijau gelap */
+  font-weight: 600;
+}
+
+/* Description text */
+.card p {
+  font-size: 14px;
+  color: #4f5f52;
+  margin-bottom: 20px;
+}
+
+/* Input group */
+.input-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #3a4b40;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #b7d5c4;
+  margin-top: 5px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #1b8f56; /* hijau terang */
+  box-shadow: 0px 0px 4px rgba(27, 143, 86, 0.4);
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  background: #1b8f56; /* hijau utama */
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  background: #167c49; /* slightly darker */
+}
