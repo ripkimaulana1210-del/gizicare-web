@@ -1,0 +1,127 @@
+/* Font & Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background: #00a76d;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-menu a {
+    margin-left: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    text-decoration: underline;
+}
+
+/* Header */
+.hero.small {
+    background: linear-gradient(#00a76d, #00925f);
+    color: #fff;
+    text-align: center;
+    padding: 45px 10px;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* Title */
+.container h2 {
+    text-align: center;
+    color: #007c54;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+/* Card Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.card.option {
+    background: #eafff5;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #007c54;
+    font-size: 18px;
+    border-radius: 12px;
+    transition: 0.3s;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+
+.card.option:hover {
+    background: #00a76d;
+    color: white;
+    transform: scale(1.07);
+    border-color: #007c54;
+}
+
+/* Back button */
+.btn.back {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    background: #007c54;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.btn.back:hover {
+    background: #009b66;
+}
+
+/* Footer */
+.footer {
+    background: #007c54;
+    color: #fff;
+    text-align: center;
+    padding: 35px 10px;
+    margin-top: 40px;
+}
+
+.footer-logo-text {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.footer-tagline {
+    font-size: 14px;
+    opacity: 0.85;
+    margin-bottom: 8px;
+}
+
+.footer-copy {
+    font-size: 13px;
+    opacity: 0.7;
+}

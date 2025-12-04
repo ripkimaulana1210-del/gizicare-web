@@ -1,0 +1,40 @@
+@import url('edukasi.css');
+
+/* Tambahan style khusus untuk materi */
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card.materi {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.07);
+    text-align: center;
+    transition: 0.25s;
+    border: 2px solid transparent;
+}
+
+.card.materi:hover {
+    transform: translateY(-6px);
+    border-color: #00B870;
+    background: #e8fff3;
+}
+
+.card.materi .icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.card.materi h3 {
+    margin: 8px 0;
+    color: #004B3A;
+}
+
+.card.materi p {
+    font-size: 14px;
+    color: #006a52;
+}
