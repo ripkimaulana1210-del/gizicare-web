@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Verifikasi OTP - GiziCare</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/otp.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">GiziCare</div>
+    <nav class="nav-menu">
+      <a href="../index.html">Home</a>
+      <a href="../edukasi/edukasi.html">Edukasi</a>
+      <a href="../gizi/gizi.html">Pencatatan</a>
+      <a href="../masalah gizi/masalahgizi.html">Masalah Gizi</a>
+      <a href="login.html" class="btn-login">Masuk</a>
+    </nav>
+  </header>
+
+  <!-- OTP FORM -->
+  <div class="otp-wrapper">
+
+    <div class="otp-card">
+      <h2 class="title">Verifikasi OTP 🔐</h2>
+      <p class="subtitle">Kami sudah mengirimkan kode OTP ke email Anda.</p>
+
+      <form id="otpForm">
+
+        <input type="hidden" id="email">
+
+        <div class="input-group">
+          <span class="material-icon">📩</span>
+          <input type="text" id="otp" maxlength="6" placeholder="Masukkan Kode OTP" required>
+        </div>
+
+        <button class="btn primary" type="submit">Verifikasi</button>
+
+      </form>
+
+      <p class="resend">Tidak menerima kode? <a href="#" id="resendOtp">Kirim ulang</a></p>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    © 2025 GiziCare — Mendukung Generasi Sehat
+  </footer>
+
+  <script src="js/otp.js"></script>
+
+</body>
+
+</html>

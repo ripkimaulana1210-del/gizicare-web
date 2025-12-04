@@ -10,48 +10,72 @@
 
 <body>
 
-    <h2>Pencatatan Gizi Balita</h2>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">GiziCare</div>
+        <nav class="nav-menu">
+            <a href="../index.html">Home</a>
+            <a href="../edukasi/edukasi.html">Edukasi</a>
+            <a class="active">Pencatatan</a>
+            <a href="../masalah gizi/masalahgizi.html">Masalah Gizi</a>
+            <a href="../auth/login.html" class="btn-login">Logout</a>
+        </nav>
+    </header>
 
-    <!-- FORM INPUT -->
-    <form id="giziForm">
-        <input type="text" id="nama" placeholder="Nama Balita" required>
+    <!-- CONTENT WRAPPER -->
+    <div class="container">
 
-        <select id="jenis_kelamin" required>
-            <option value="">Jenis Kelamin</option>
-            <option value="L">Laki-laki</option>
-            <option value="P">Perempuan</option>
-        </select>
+        <h2 class="title">📘 Pencatatan Gizi Balita</h2>
+        <p class="subtitle">Silakan masukkan data gizi balita dengan lengkap.</p>
 
-        <input type="number" id="usia_bulan" placeholder="Usia (bulan)" required>
-        <input type="number" step="0.1" id="berat_badan" placeholder="Berat badan (kg)" required>
-        <input type="number" step="0.1" id="tinggi_badan" placeholder="Tinggi badan (cm)" required>
-        <input type="number" step="0.1" id="lingkar_kepala" placeholder="Lingkar kepala (opsional)">
+        <!-- FORM INPUT -->
+        <form id="giziForm" class="form-card">
 
-        <button type="submit" class="btn-save">Simpan</button>
-    </form>
+            <input type="text" id="nama" placeholder="Nama Balita" required>
 
-    <hr>
+            <select id="jenis_kelamin" required>
+                <option value="">Jenis Kelamin</option>
+                <option value="L">Laki-laki</option>
+                <option value="P">Perempuan</option>
+            </select>
 
+            <div class="input-row">
+                <input type="number" id="usia_bulan" placeholder="Usia (bulan)" required>
+                <input type="number" step="0.1" id="berat_badan" placeholder="Berat (kg)" required>
+            </div>
 
-    <!-- TABLE RIWAYAT -->
-    <h3 class="history-title">Riwayat Data</h3>
-    
+            <div class="input-row">
+                <input type="number" step="0.1" id="tinggi_badan" placeholder="Tinggi (cm)" required>
+                <input type="number" step="0.1" id="lingkar_kepala" placeholder="Lingkar kepala (opsional)">
+            </div>
 
-    <table class="history-table" id="dataList">
-        <thead>
-            <tr>
-                <th>Nama</th>
-                <th>JK</th>
-                <th>Usia (bln)</th>
-                <th>Berat (kg)</th>
-                <th>Tinggi (cm)</th>
-                <th>Lingkar Kepala</th>
-                <th>Status</th>
-                <th>Aksi</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+            <button type="submit" class="btn-save">Simpan</button>
+        </form>
+
+        <!-- TABLE -->
+        <h3 class="history-title">📄 Riwayat Data</h3>
+
+        <table class="history-table" id="dataList">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>JK</th>
+                    <th>Usia</th>
+                    <th>Berat</th>
+                    <th>Tinggi</th>
+                    <th>Lingkar Kepala</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        © 2025 GiziCare — Mendukung Generasi Sehat
+    </footer>
 
 </body>
 

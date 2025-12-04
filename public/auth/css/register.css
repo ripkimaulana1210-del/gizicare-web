@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eafaf0;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #0F8C4E;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-menu a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-login {
+    background: white;
+    color: #0F8C4E;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* CARD */
+.register-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.register-card {
+    background: white;
+    width: 380px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+    color: #0F8C4E;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* INPUT STYLE */
+.input-group {
+    background: #EEFFF4;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.material-icon {
+    margin-right: 10px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* BUTTON */
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn.primary {
+    background: #0F8C4E;
+    color: white;
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 80px;
+    background: #004225;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}

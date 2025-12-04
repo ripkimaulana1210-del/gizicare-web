@@ -1,143 +1,165 @@
-/* masalah.css — clean modern UI */
-:root {
-    --green: #16a34a;
-    --bg: #f7fbf7;
-    --card: #ffffff;
-    --muted: #667085;
-}
-
-* {
-    box-sizing: border-box
-}
-
+/* ================= GLOBAL STYLE ================= */
 body {
     margin: 0;
-    font-family: Inter, ui-sans-serif, system-ui, Arial, sans-serif;
-    background: var(--bg);
-    display: flex;
-    justify-content: center;
-    padding: 28px;
-    color: #0f172a;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5fdf8;
+    color: #004B3A;
 }
 
+a {
+    text-decoration: none;
+    color: #007a5a;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #00B870;
+}
+
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background: #00B870;
+    color: #ffffff;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.nav-links a:hover {
+    opacity: 0.85;
+}
+
+.nav-links a.active {
+    background: #ffffff;
+    color: #00B870;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+
+/* ================= CONTENT WRAPPER ================= */
 .wrapper {
-    width: 520px;
-    max-width: 95%;
-    background: var(--card);
-    border-radius: 12px;
-    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-
-.header {
-    background: var(--green);
-    color: #fff;
-    padding: 18px 20px;
+    width: 90%;
+    max-width: 850px;
+    background: white;
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
 .header h2 {
-    margin: 0 0 6px 0
+    font-size: 26px;
+    margin-bottom: 8px;
+    color: #004B3A;
 }
 
 .header p {
-    margin: 0;
-    font-size: 13px;
-    color: rgba(255, 255, 255, 0.9)
+    color: #147a63;
 }
 
+
+/* ================= AI OUTPUT BOX ================= */
 .output {
-    padding: 18px;
-    height: 500px;
-    overflow: auto;
-    background: linear-gradient(180deg, #fbfff9, #f8faf8);
+    width: 100%;
+    min-height: 180px;
+    background: #f0fff7;
+    border: 2px solid #c8f7de;
+    border-radius: 14px;
+    padding: 15px;
+    margin: 20px 0;
 }
 
-/* message blocks */
-.message {
-    margin-bottom: 12px;
-    padding: 12px 14px;
-    border-radius: 10px;
-    font-size: 14px;
-    line-height: 1.45;
-    box-shadow: 0 1px 0 rgba(15, 23, 42, 0.04) inset;
-}
 
-.message.user {
-    background: #d1fae5;
-    align-self: flex-end;
-    text-align: right;
-}
-
-.message.ai {
-    background: #eef2ff;
-    border-left: 4px solid #4f46e5;
-}
-
-/* diagnosis card */
-.diagnosis-box {
-    background: #fff;
-    border-radius: 10px;
-    padding: 12px;
-    box-shadow: 0 6px 14px rgba(2, 6, 23, 0.04);
-    margin-bottom: 12px;
-}
-
-.alert.red {
-    background: #fff1f2;
-    border-left: 6px solid #ef4444;
-    padding: 12px;
-    border-radius: 8px;
-    margin-bottom: 12px;
-}
-
-/* input area */
+/* ================= INPUT & BUTTON ================= */
 .input-area {
     display: flex;
-    gap: 10px;
-    padding: 14px;
-    border-top: 1px solid #eef2f7;
-    background: linear-gradient(180deg, #fff, #fbfff9);
+    gap: 12px;
+    margin-bottom: 15px;
 }
 
-input#userInput {
+.input-area input {
     flex: 1;
-    padding: 10px 12px;
+    padding: 14px;
     border-radius: 10px;
-    border: 1px solid #e6eef6;
+    border: 2px solid #d3f2df;
+    outline: none;
+    transition: 0.2s;
+}
+
+.input-area input:focus {
+    border-color: #00B870;
+    box-shadow: 0 0 5px rgba(0, 184, 112, 0.4);
+}
+
+#sendBtn {
+    background: #00B870;
+    border: none;
+    padding: 14px 25px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#sendBtn:hover {
+    background: #00925c;
+}
+
+
+/* ================= FOOTER TEXT ================= */
+.footer-note {
+    text-align: center;
+    color: #2c6b59;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+
+/* ================= MAIN FOOTER ================= */
+.main-footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 35px 10px;
+    background: #004B3A;
+    color: white;
     font-size: 14px;
 }
 
-button#sendBtn {
-    background: var(--green);
-    color: white;
-    border: none;
-    padding: 10px 14px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: 600;
-}
 
-button#sendBtn:hover {
-    transform: translateY(-1px);
-    transition: all .12s ease
-}
-
-.footer-note {
-    padding: 10px 16px;
-    font-size: 12px;
-    color: var(--muted);
-    background: transparent;
-    text-align: center
-}
-
-@media(max-width:560px) {
-    .wrapper {
-        width: 100%
+/* ================= RESPONSIVE ================= */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .output {
-        height: 420px
+    .input-area {
+        flex-direction: column;
+    }
+
+    #sendBtn {
+        width: 100%;
     }
 }

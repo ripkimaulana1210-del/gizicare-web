@@ -1,129 +1,136 @@
-.history-title {
-    margin-top: 25px;
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #eefdf8;
+}
+
+/* === NAVBAR === */
+.navbar {
+    background: #009879;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar .logo {
     font-size: 20px;
     font-weight: bold;
-    color: #0b5d27;
+}
+
+.nav-menu a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu .active {
+    text-decoration: underline;
+}
+
+.btn-login {
+    background: white;
+    padding: 7px 14px;
+    border-radius: 8px;
+    color: #009879 !important;
+    font-weight: bold;
+}
+
+/* === CONTENT WRAPPER === */
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+/* TITLES */
+.title {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.subtitle {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* === FORM === */
+.form-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.form-card input,
+.form-card select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #cceee5;
+    border-radius: 10px;
+    background: #f6fffc;
+    font-size: 14px;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-save {
+    background: #009879;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-save:hover {
+    background: #00745d;
+}
+
+/* === TABLE === */
+.history-title {
+    margin: 15px 0;
 }
 
 .history-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
-    background: #ffffff;
-    border-radius: 10px;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .history-table th {
-    background: #0b5d27;
+    background: #009879;
     color: white;
-    padding: 10px;
-    text-align: center;
+    padding: 12px;
 }
 
 .history-table td {
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
-    text-align: center;
-}
-
-.history-table tr:nth-child(even) {
-    background: #f7f7f7;
-}
-
-.btn-delete {
-    background: #c62828;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.btn-delete:hover {
-    background: #9a1f1f;
-}
-
-.gizi-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-    font-size: 14px;
+    padding: 10px;
     background: white;
-    border-radius: 10px;
-    overflow: hidden;
+    border-bottom: 1px solid #d9f3eb;
 }
 
-.gizi-table thead {
-    background: #006400;
+.history-table tr:hover {
+    background: #eafaf5;
+}
+
+/* === FOOTER === */
+.footer {
+    background: #005b46;
     color: white;
-}
-
-.gizi-table th,
-.gizi-table td {
-    padding: 10px;
     text-align: center;
-    border-bottom: 1px solid #e6e6e6;
-}
-
-.gizi-table tr:hover {
-    background: #f7fff5;
-    transition: 0.3s;
-}
-
-.gizi-table td:first-child {
-    font-weight: bold;
-}
-
-.gizi-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.gizi-table th,
-.gizi-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
-.gizi-table th {
-    background-color: #4CAF50;
-    color: white;
-    font-weight: bold;
-}
-
-.gizi-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-.gizi-table tr:hover {
-    background-color: #e8f7ff;
-}
-
-.edit-btn {
-    background: #007bff;
-    border: none;
-    padding: 4px 10px;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.edit-btn:hover {
-    background: #0056b3;
-}
-
-.filter-box {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.filter-box input,
-.filter-box select {
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    padding: 12px;
+    margin-top: 40px;
 }

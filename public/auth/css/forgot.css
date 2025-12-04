@@ -1,0 +1,132 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #eafaf0;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #0F8C4E;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-menu a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn-login {
+    background: #fff;
+    color: #0F8C4E;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* FORM WRAPPER */
+.forgot-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 110px;
+    padding-bottom: 50px;
+}
+
+/* CARD */
+.forgot-card {
+    width: 380px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.09);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0F8C4E;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 18px;
+}
+
+/* INPUT */
+.input-group {
+    background: #EEFFF4;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.material-icon {
+    margin-right: 10px;
+}
+
+input {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+/* BUTTON */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.btn.primary {
+    background-color: #0F8C4E;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn.primary:hover {
+    background-color: #0b6b3b;
+}
+
+/* TEXT */
+.small-text {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+/* FOOTER */
+.footer {
+    background: #004225;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    margin-top: 60px;
+    font-size: 14px;
+}

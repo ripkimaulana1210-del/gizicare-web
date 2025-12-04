@@ -4,30 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Reset Password - GiziCare</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
 
 <body>
 
-    <div class="card">
-        <h2>Reset Password</h2>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">GiziCare</div>
+        <nav class="nav-menu">
+            <a href="../index.html">Home</a>
+            <a href="../edukasi/edukasi.html">Edukasi</a>
+            <a href="../gizi/gizi.html">Pencatatan</a>
+            <a href="../masalah gizi/masalahgizi.html">Masalah Gizi</a>
+            <a href="login.html" class="btn-login">Masuk</a>
+        </nav>
+    </header>
 
-        <form id="resetForm">
-            <div class="input-group">
-                <label>Kode OTP</label>
-                <input type="text" id="otp" placeholder="Masukkan kode OTP">
-            </div>
+    <!-- FORM -->
+    <div class="reset-wrapper">
+        <div class="reset-card">
 
-            <div class="input-group">
-                <label>Password Baru</label>
-                <input type="password" id="newPassword" placeholder="Masukkan password baru">
-            </div>
+            <h2 class="title">Reset Password 🔒</h2>
+            <p class="subtitle">Masukkan kode OTP dan password baru kamu.</p>
 
-            <button class="btn" type="submit">Reset Password</button>
-        </form>
+            <form id="resetForm">
 
-        <p class="text-center"><a href="login.html">Kembali ke Login</a></p>
+                <div class="input-group">
+                    <span class="material-icon">🔐</span>
+                    <input type="text" id="otp" placeholder="Kode OTP" required>
+                </div>
+
+                <div class="input-group">
+                    <span class="material-icon">🔑</span>
+                    <input type="password" id="newPassword" placeholder="Password Baru" required>
+                </div>
+
+                <button class="btn primary" type="submit">Reset Password</button>
+            </form>
+
+            <p class="small-text">Sudah ingat password? <a href="login.html">Login di sini</a></p>
+
+        </div>
     </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        © 2025 GiziCare — Mendukung Generasi Sehat
+    </footer>
 
     <script src="js/reset.js"></script>
 </body>

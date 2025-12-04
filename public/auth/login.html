@@ -4,20 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <title>Login - GiziCare</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
 
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">GiziCare</div>
+    <nav class="nav-menu">
+      <a href="../index.html">Home</a>
+      <a href="../edukasi/edukasi.html">Edukasi</a>
+      <a href="../gizi/gizi.html">Pencatatan</a>
+      <a href="../masalah gizi/masalahgizi.html">Masalah Gizi</a>
+      <a href="login.html" class="active btn-login">Masuk</a>
+    </nav>
+  </header>
+
+  <!-- LOGIN FORM -->
   <div class="login-wrapper">
-
     <div class="login-card">
-
       <h2 class="title">Selamat Datang 👋</h2>
       <p class="subtitle">Masuk ke akun GiziCare Anda</p>
 
       <form id="loginForm" class="form">
-
         <div class="input-group">
           <span class="material-icon">📧</span>
           <input type="email" id="email" placeholder="Email">
@@ -37,10 +47,12 @@
       </div>
 
     </div>
-
   </div>
 
-  <script src="js/login.js"></script>
+  <!-- FOOTER -->
+  <footer class="footer">
+    © 2025 GiziCare — Mendukung Generasi Sehat
+  </footer>
 
 </body>
 

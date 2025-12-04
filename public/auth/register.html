@@ -3,56 +3,65 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Daftar Akun - GiziCare</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Daftar - GiziCare</title>
+  <link rel="stylesheet" href="css/register.css">
+  <script defer src="js/register.js"></script>
 </head>
 
 <body>
 
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">GiziCare</div>
+    <nav class="nav-menu">
+      <a href="../index.html">Home</a>
+      <a href="../edukasi/edukasi.html">Edukasi</a>
+      <a href="../gizi/gizi.html">Pencatatan</a>
+      <a href="../masalah gizi/masalahgizi.html">Masalah Gizi</a>
+      <a href="login.html" class="btn-login">Masuk</a>
+    </nav>
+  </header>
+
+  <!-- REGISTER CARD -->
   <div class="register-wrapper">
-
     <div class="register-card">
-
-      <h2 class="title">Buat Akun Baru</h2>
-      <p class="subtitle">Mulai perjalanan sehat Anda bersama GiziCare</p>
-
-      <div class="profile-circle"></div>
+      <h2 class="title">Buat Akun Baru ✨</h2>
+      <p class="subtitle">Daftar untuk mulai menggunakan GiziCare</p>
 
       <form id="registerForm" class="form">
-
         <div class="input-group">
           <span class="material-icon">👤</span>
-          <input type="text" id="username" placeholder="Nama Lengkap">
+          <input type="text" id="nama" placeholder="Nama Lengkap" required>
         </div>
 
         <div class="input-group">
-          <span class="material-icon">@</span>
-          <input type="email" id="email" placeholder="Email">
-        </div>
-
-        <div class="input-group">
-          <span class="material-icon">🔒</span>
-          <input type="password" id="password" placeholder="Kata Sandi">
+          <span class="material-icon">📧</span>
+          <input type="email" id="email" placeholder="Email" required>
         </div>
 
         <div class="input-group">
           <span class="material-icon">🔒</span>
-          <input type="password" id="confirmPassword" placeholder="Konfirmasi Kata Sandi">
+          <input type="password" id="password" placeholder="Kata Sandi" required>
+        </div>
+
+        <div class="input-group">
+          <span class="material-icon">🔒</span>
+          <input type="password" id="confirm" placeholder="Konfirmasi Sandi" required>
         </div>
 
         <button class="btn primary" type="submit">Daftar</button>
-
       </form>
 
       <div class="bottom-links">
-        <p>Sudah punya akun? <a href="login.html">Login</a></p>
+        <p>Sudah punya akun? <a href="login.html">Masuk</a></p>
       </div>
-
     </div>
-
   </div>
 
-  <script src="js/register.js"></script>
+  <!-- FOOTER -->
+  <footer class="footer">
+    © 2025 GiziCare — Mendukung Generasi Sehat
+  </footer>
 
 </body>
 

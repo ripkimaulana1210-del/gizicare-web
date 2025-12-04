@@ -1,27 +1,53 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <title>Lupa Password - GiziCare</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/forgot.css">
 </head>
+
 <body>
 
-<div class="card">
-  <h2>Lupa Password</h2>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">GiziCare</div>
+    <nav class="nav-menu">
+      <a href="../index.html">Home</a>
+      <a href="../edukasi/edukasi.html">Edukasi</a>
+      <a href="../gizi/gizi.html">Pencatatan</a>
+      <a href="../masalah gizi/masalahgizi.html">Masalah Gizi</a>
+      <a href="login.html" class="btn-login">Masuk</a>
+    </nav>
+  </header>
 
-  <form id="forgotForm">
-    <div class="input-group">
-      <label>Email</label>
-      <input type="email" id="email" placeholder="Masukkan email kamu">
+  <!-- FORM -->
+  <div class="forgot-wrapper">
+    <div class="forgot-card">
+
+      <h2 class="title">Lupa Password 🔑</h2>
+      <p class="subtitle">Masukkan email kamu untuk menerima kode reset password.</p>
+
+      <form id="forgotForm">
+        <div class="input-group">
+          <span class="material-icon">📧</span>
+          <input type="email" id="email" placeholder="Email kamu..." required>
+        </div>
+
+        <button class="btn primary" type="submit">Kirim OTP Reset</button>
+      </form>
+
+      <p class="small-text">Ingat password? <a href="login.html">Login di sini</a></p>
+
     </div>
+  </div>
 
-    <button class="btn" type="submit">Kirim OTP Reset</button>
-  </form>
+  <!-- FOOTER -->
+  <footer class="footer">
+    © 2025 GiziCare — Mendukung Generasi Sehat
+  </footer>
 
-  <p class="text-center"><a href="login.html">Kembali ke Login</a></p>
-</div>
-
-<script src="js/forgot.js"></script>
+  <script src="js/forgot.js"></script>
 </body>
+
 </html>
