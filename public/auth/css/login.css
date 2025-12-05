@@ -1,31 +1,64 @@
-/* CARD LOGIN KHUSUS */
-.login-card {
+/* Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  /* Card */
+  .login-card {
+    background: #ffffff;
     width: 80%;
     max-width: 450px;
-    margin: 40px auto;
     padding: 30px;
-}
-
-.login-form {
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Title */
+  .login-card h2 {
+    margin-bottom: 8px;
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .subtitle {
+    margin-bottom: 20px;
+    color: #666;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  /* Form */
+  form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
-
-.login-form label {
-    font-weight: 600;
-    color: #004b3a;
-}
-
-.login-form input {
-    padding: 12px;
-    border-radius: 10px;
-    border: 1px solid #cceee5;
+  }
+  
+  /* Input group — sama kayak register */
+  .input-group {
     background: #f6fffc;
+    border: 1px solid #cceee5;
+    display: flex;
+    padding: 12px;
+    border-radius: 12px;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .input-group input {
+    flex: 1;
+    border: none;
+    outline: none;
     font-size: 15px;
-}
-
-.btn-login-submit {
+    background: transparent;
+  }
+  
+  /* Login button — warna sama kayak register */
+  .btn-login-submit {
     background: #009879;
     color: white;
     padding: 12px;
@@ -33,41 +66,35 @@
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 5px;
     transition: 0.2s;
-}
-
-.btn-login-submit:hover {
+  }
+  
+  .btn-login-submit:hover {
     background: #00745d;
-}
-
-.register-link {
+  }
+  
+  /* Link */
+  .register-text {
     text-align: center;
     font-size: 14px;
-    margin-top: 8px;
-}
-
-.register-link a {
+  }
+  
+  .register-text a {
     color: #009879;
     text-decoration: none;
-}
-
-/* RESPONSIVE */
-@media (max-width: 700px) {
-
+  }
+  
+  /* Mobile */
+  @media (max-width: 700px) {
     .login-card {
-        width: 92%;
-        padding: 25px;
-        margin-top: 20px;
+      width: 92%;
+      padding: 25px;
+      margin-top: 20px;
     }
-
-    .login-form input {
-        padding: 14px;
-        font-size: 16px;
-    }
-
+  
     .btn-login-submit {
-        padding: 14px;
-        font-size: 17px;
+      padding: 14px;
+      font-size: 17px;
     }
-}
+  }
+  

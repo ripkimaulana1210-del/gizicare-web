@@ -20,7 +20,7 @@
       <a href="../edukasi/edukasi.html">Edukasi</a>
       <a href="../gizi/gizi.html">Pencatatan</a>
       <a href="../masalah gizi/masalahgizi.html">Masalah Gizi</a>
-      <a href="login.html" class="active btn-login">Masuk</a>
+      <a href="login.html" class="btn-login active">Masuk</a>
     </nav>
   </header>
 
@@ -33,24 +33,30 @@
   </section>
 
   <!-- LOGIN CARD -->
-  <div class="container">
-    <div class="card login-card">
-      <h2 class="title">🔐 Login</h2>
-      <p class="subtitle">Gunakan email dan kata sandi akun Anda.</p>
+  <div class="login-container">
+    <div class="login-card">
+      <h2>Login</h2>
+      <p class="subtitle">Gunakan email dan kata sandi Anda.</p>
 
-      <form class="login-form">
-        <label>Email</label>
-        <input type="email" placeholder="Masukkan email..." required>
+      <form id="loginForm">
 
-        <label>Kata Sandi</label>
-        <input type="password" placeholder="Masukkan kata sandi..." required>
-
+        <label for="email">Email</label>
+        <div class="input-group">
+          <input id="email" type="email" placeholder="Masukkan email..." required>
+        </div>
+      
+        <label for="password">Kata Sandi</label>
+        <div class="input-group">
+          <input id="password" type="password" placeholder="Masukkan kata sandi..." required>
+        </div>
+      
         <button type="submit" class="btn-login-submit">Masuk</button>
-
-        <p class="register-link">
+      
+        <p class="register-text">
           Belum punya akun? <a href="register.html">Daftar di sini</a>
         </p>
       </form>
+      
     </div>
   </div>
 
@@ -58,6 +64,8 @@
   <footer class="footer">
     © 2025 GiziCare — Mendukung Generasi Sehat
   </footer>
+
+  <script src="js/login.js"></script>
 
 </body>
 

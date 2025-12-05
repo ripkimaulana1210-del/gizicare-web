@@ -1,9 +1,32 @@
-/* REGISTER CARD */
+/* CONTAINER */
+.container {
+    width: 85%;
+    margin: 40px auto;
+}
+
+/* CARD */
 .register-card {
-    width: 80%;
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
     max-width: 450px;
     margin: 40px auto;
-    padding: 30px;
+    text-align: center;
+}
+
+/* TITLE & SUBTITLE */
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #004B3A;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
 }
 
 /* FORM */
@@ -13,46 +36,46 @@
     gap: 15px;
 }
 
+/* INPUT GROUP */
 .input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
     background: #f6fffc;
     border: 1px solid #cceee5;
-    display: flex;
-    padding: 12px;
     border-radius: 12px;
-    gap: 10px;
-    align-items: center;
 }
 
 .input-group input {
     flex: 1;
     border: none;
     outline: none;
-    font-size: 15px;
     background: transparent;
+    font-size: 15px;
 }
 
 /* BUTTON */
 .btn-register-submit {
     background: #009879;
     color: white;
-    padding: 12px;
+    padding: 14px;
+    font-size: 16px;
     border: none;
     border-radius: 10px;
-    font-size: 16px;
     cursor: pointer;
-    margin-top: 10px;
     transition: 0.2s;
+    margin-top: 10px;
 }
 
 .btn-register-submit:hover {
     background: #00745d;
 }
 
-/* LINK */
+/* LOGIN LINK */
 .login-link {
-    text-align: center;
-    font-size: 14px;
     margin-top: 10px;
+    font-size: 14px;
 }
 
 .login-link a {
@@ -69,7 +92,7 @@
     }
 
     .btn-register-submit {
-        padding: 14px;
+        padding: 16px;
         font-size: 17px;
     }
 }
