@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Daftar - GiziCare</title>
+  <title>GiziCare — Daftar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="css/register.css">
-  <script defer src="js/register.js"></script>
 </head>
 
 <body>
@@ -13,48 +14,51 @@
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="logo">GiziCare</div>
-    <nav class="nav-menu">
-      <a href="../index.html">Home</a>
-      <a href="../edukasi/edukasi.html">Edukasi</a>
-      <a href="../gizi/gizi.html">Pencatatan</a>
-      <a href="../masalah gizi/masalahgizi.html">Masalah Gizi</a>
-      <a href="login.html" class="btn-login">Masuk</a>
-    </nav>
   </header>
 
-  <!-- REGISTER CARD -->
-  <div class="register-wrapper">
-    <div class="register-card">
-      <h2 class="title">Buat Akun Baru ✨</h2>
-      <p class="subtitle">Daftar untuk mulai menggunakan GiziCare</p>
+  <!-- HERO -->
+  <section class="hero small">
+    <div class="hero-text">
+      <h1>Buat <span>Akun</span></h1>
+      <p>Daftar untuk mulai menggunakan fitur lengkap GiziCare.</p>
+    </div>
+  </section>
 
-      <form id="registerForm" class="form">
+  <!-- REGISTER CARD -->
+  <div class="container">
+    <div class="card register-card">
+      <h2 class="title">✨ Daftar Akun Baru</h2>
+      <p class="subtitle">Masukkan data diri Anda dengan benar.</p>
+
+      <form id="registerForm" class="register-form">
+
         <div class="input-group">
-          <span class="material-icon">👤</span>
+          <span>👤</span>
           <input type="text" id="nama" placeholder="Nama Lengkap" required>
         </div>
 
         <div class="input-group">
-          <span class="material-icon">📧</span>
+          <span>📧</span>
           <input type="email" id="email" placeholder="Email" required>
         </div>
 
         <div class="input-group">
-          <span class="material-icon">🔒</span>
+          <span>🔒</span>
           <input type="password" id="password" placeholder="Kata Sandi" required>
         </div>
 
         <div class="input-group">
-          <span class="material-icon">🔒</span>
+          <span>🔒</span>
           <input type="password" id="confirm" placeholder="Konfirmasi Sandi" required>
         </div>
 
-        <button class="btn primary" type="submit">Daftar</button>
-      </form>
+        <button class="btn-register-submit" type="submit">Daftar</button>
 
-      <div class="bottom-links">
-        <p>Sudah punya akun? <a href="login.html">Masuk</a></p>
-      </div>
+        <p class="login-link">
+          Sudah punya akun? <a href="login.html">Masuk di sini</a>
+        </p>
+
+      </form>
     </div>
   </div>
 

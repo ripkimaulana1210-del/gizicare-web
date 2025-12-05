@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Login - GiziCare</title>
+  <title>GiziCare — Masuk</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="css/login.css">
 </head>
 
@@ -12,6 +14,7 @@
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="logo">GiziCare</div>
+
     <nav class="nav-menu">
       <a href="../index.html">Home</a>
       <a href="../edukasi/edukasi.html">Edukasi</a>
@@ -21,31 +24,33 @@
     </nav>
   </header>
 
-  <!-- LOGIN FORM -->
-  <div class="login-wrapper">
-    <div class="login-card">
-      <h2 class="title">Selamat Datang 👋</h2>
-      <p class="subtitle">Masuk ke akun GiziCare Anda</p>
+  <!-- HERO -->
+  <section class="hero small">
+    <div class="hero-text">
+      <h1>Masuk ke <span>GiziCare</span></h1>
+      <p>Akses fitur lengkap dan catatan gizi pribadi.</p>
+    </div>
+  </section>
 
-      <form id="loginForm" class="form">
-        <div class="input-group">
-          <span class="material-icon">📧</span>
-          <input type="email" id="email" placeholder="Email">
-        </div>
+  <!-- LOGIN CARD -->
+  <div class="container">
+    <div class="card login-card">
+      <h2 class="title">🔐 Login</h2>
+      <p class="subtitle">Gunakan email dan kata sandi akun Anda.</p>
 
-        <div class="input-group">
-          <span class="material-icon">🔒</span>
-          <input type="password" id="password" placeholder="Kata Sandi">
-        </div>
+      <form class="login-form">
+        <label>Email</label>
+        <input type="email" placeholder="Masukkan email..." required>
 
-        <button class="btn primary" type="submit">Login</button>
+        <label>Kata Sandi</label>
+        <input type="password" placeholder="Masukkan kata sandi..." required>
+
+        <button type="submit" class="btn-login-submit">Masuk</button>
+
+        <p class="register-link">
+          Belum punya akun? <a href="register.html">Daftar di sini</a>
+        </p>
       </form>
-
-      <div class="bottom-links">
-        <a href="forgot.html" class="small-link">Lupa Password?</a>
-        <p>Belum punya akun? <a href="register.html">Daftar</a></p>
-      </div>
-
     </div>
   </div>
 

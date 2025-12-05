@@ -1,148 +1,73 @@
-/* === GLOBAL === */
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #eefdf8;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-/* === NAVBAR === */
-.navbar {
-    background: #009879;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.navbar .logo {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.nav-menu a {
-    margin-left: 20px;
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-.nav-menu a:hover {
-    text-decoration: underline;
-}
-
-.btn-login {
-    background: white;
-    color: #009879 !important;
-    padding: 7px 15px;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-.btn-login:hover {
-    background: #e6f9f3;
-}
-
-/* === WRAPPER === */
-.login-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 150px);
-    padding-top: 40px;
-}
-
-/* === LOGIN CARD === */
+/* CARD LOGIN KHUSUS */
 .login-card {
-    background: white;
-    width: 380px;
+    width: 80%;
+    max-width: 450px;
+    margin: 40px auto;
     padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
-.title {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.subtitle {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-/* === INPUT === */
-.input-group {
-    background: #eefdf8;
-    border-radius: 10px;
+.login-form {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form label {
+    font-weight: 600;
+    color: #004b3a;
+}
+
+.login-form input {
     padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid transparent;
-    transition: 0.3s;
+    border-radius: 10px;
+    border: 1px solid #cceee5;
+    background: #f6fffc;
+    font-size: 15px;
 }
 
-.input-group:focus-within {
-    border: 1px solid #009879;
-}
-
-.input-group input {
-    width: 100%;
-    border: none;
-    background: none;
-    outline: none;
-    font-size: 14px;
-}
-
-/* === BUTTON === */
-.btn.primary {
-    width: 100%;
+.btn-login-submit {
     background: #009879;
     color: white;
-    border: none;
     padding: 12px;
+    border: none;
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-    transition: 0.3s;
+    margin-top: 5px;
+    transition: 0.2s;
 }
 
-.btn.primary:hover {
+.btn-login-submit:hover {
     background: #00745d;
 }
 
-/* === BOTTOM LINKS === */
-.bottom-links {
-    margin-top: 15px;
+.register-link {
+    text-align: center;
     font-size: 14px;
+    margin-top: 8px;
 }
 
-.bottom-links a {
+.register-link a {
     color: #009879;
-    font-weight: bold;
     text-decoration: none;
 }
 
-.bottom-links a:hover {
-    text-decoration: underline;
-}
+/* RESPONSIVE */
+@media (max-width: 700px) {
 
-/* === FOOTER === */
-.footer {
-    text-align: center;
-    background: #005b46;
-    color: white;
-    padding: 10px;
-    font-size: 13px;
-    margin-top: 40px;
+    .login-card {
+        width: 92%;
+        padding: 25px;
+        margin-top: 20px;
+    }
+
+    .login-form input {
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    .btn-login-submit {
+        padding: 14px;
+        font-size: 17px;
+    }
 }
