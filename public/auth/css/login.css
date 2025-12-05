@@ -98,3 +98,17 @@
     }
   }
   
+  .forgot-password {
+    text-align: right;
+    font-size: 13px;
+    margin: 5px 0 15px 0;
+}
+
+.forgot-password a {
+    color: #009879;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
