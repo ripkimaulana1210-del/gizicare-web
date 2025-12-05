@@ -4,28 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Pencatatan Gizi Balita - GiziCare</title>
+
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="gizi-style.css">
+
     <script defer src="gizi.js"></script>
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- ================= NAVBAR (SAMA DENGAN INDEX) ================= -->
     <header class="navbar">
         <div class="logo">GiziCare</div>
+
         <nav class="nav-menu">
             <a href="../index.html">Home</a>
             <a href="../edukasi/edukasi.html">Edukasi</a>
             <a class="active">Pencatatan</a>
             <a href="../masalah gizi/masalahgizi.html">Masalah Gizi</a>
-            <a href="../auth/login.html" class="btn-login">Logout</a>
+            <a href="../auth/login.html" class="btn-login">Masuk</a>
         </nav>
     </header>
 
-    <!-- CONTENT WRAPPER -->
+    <!-- ================= CONTENT ================= -->
     <div class="container">
 
-        <h2 class="title">📘 Pencatatan Gizi Balita</h2>
+        <h2 class="title">Pencatatan Gizi Balita</h2>
         <p class="subtitle">Silakan masukkan data gizi balita dengan lengkap.</p>
 
         <!-- FORM INPUT -->
@@ -53,7 +57,7 @@
         </form>
 
         <!-- TABLE -->
-        <h3 class="history-title">📄 Riwayat Data</h3>
+        <h3 class="history-title">Riwayat Data</h3>
 
         <table class="history-table" id="dataList">
             <thead>
@@ -72,7 +76,7 @@
         </table>
     </div>
 
-    <!-- FOOTER -->
+    <!-- ================= FOOTER ================= -->
     <footer class="footer">
         © 2025 GiziCare — Mendukung Generasi Sehat
     </footer>

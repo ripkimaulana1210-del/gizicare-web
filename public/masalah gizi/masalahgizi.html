@@ -3,48 +3,46 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>GiziCare — Deteksi Masalah Gizi (AI Lokal)</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GiziCare — Deteksi Masalah Gizi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="masalah.css">
 </head>
 
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar">
+  <header class="navbar">
     <div class="logo">GiziCare</div>
 
-    <ul class="nav-links">
-      <li><a href="/home.html">Home</a></li>
-      <li><a href="/edukasi.html">Edukasi</a></li>
-      <li><a href="/pencatatan.html">Pencatatan</a></li>
-      <li><a href="/masalahgizi.html" class="active">Masalah Gizi</a></li>
-    </ul>
+    <nav class="nav-menu">
+        <a href="../index.html">Home</a>
+        <a href="../edukasi/edukasi.html">Edukasi</a>
+        <a class="active">Pencatatan</a>
+        <a href="../masalah gizi/masalahgizi.html">Masalah Gizi</a>
+        <a href="../auth/login.html" class="btn-login">Masuk</a>
+    </nav>
+</header>
 
-    <button class="btn-login">Masuk</button>
-  </nav>
+  <!-- CONTENT -->
+  <div class="container">
+    <div class="card">
+      <h2 class="title">🩺 Deteksi Masalah Gizi</h2>
+      <p class="subtitle">Ketikkan gejala secara bebas. Sistem akan menganalisis secara otomatis.</p>
 
-  <!-- MAIN CONTENT -->
-  <div class="wrapper">
-    <header class="header">
-      <h2>Deteksi Masalah Gizi</h2>
-      <p>Ketik gejala kamu (kalimat bebas). Sistem akan menanyakan bila perlu.</p>
-    </header>
+      <div id="output" class="output-box"></div>
 
-    <main id="output" class="output" aria-live="polite"></main>
+      <div class="input-area">
+        <input id="userInput" type="text" placeholder="Contoh: cepat lelah, kurang nafsu makan..." />
+        <button id="sendBtn" class="btn-send">Kirim</button>
+      </div>
 
-    <div class="input-area">
-      <input id="userInput" type="text" placeholder="Contoh: sering pusing, lelah, nafsu makan turun" />
-      <button id="sendBtn">Kirim</button>
+      <p class="ai-info">⚠️ AI ini hanya memberikan saran dasar, bukan diagnosis resmi.</p>
     </div>
-
-    <footer class="footer-note">
-      <small>AI ini untuk saran gizi dasar — bukan pengganti pemeriksaan medis.</small>
-    </footer>
   </div>
 
   <!-- FOOTER -->
-  <footer class="main-footer">
+  <footer class="footer">
     © 2025 GiziCare — Mendukung Generasi Sehat
   </footer>
 

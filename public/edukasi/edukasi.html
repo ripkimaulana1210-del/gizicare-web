@@ -4,57 +4,71 @@
 <head>
   <meta charset="UTF-8" />
   <title>Edukasi – GiziCare</title>
+  <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="css/edukasi.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <!-- NAVBAR (DIUPDATE) -->
-  <div class="navbar">
+  <!-- NAVBAR -->
+  <header class="navbar">
     <div class="logo">GiziCare</div>
 
-    <div class="nav-menu">
+    <nav class="nav-menu">
       <a href="../index.html">Home</a>
-      <a href="../edukasi/edukasi.html" class="active">Edukasi</a>
-      <a href="../gizi/gizi.html">Pencatatan Data</a>
+      <a href="edukasi.html" class="active">Edukasi</a>
+      <a href="../gizi/gizi.html">Pencatatan</a>
       <a href="../masalah gizi/masalahgizi.html">Masalah Gizi</a>
-      <a href="../auth/login.html" class="profile-icon">👤</a>
-      <a href="#" class="notif-icon">🔔</a>
+      <a href="../auth/login.html" class="btn-login">Masuk</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero small">
+    <div class="hero-text">
+      <h1>Edukasi <span>Gizi</span></h1>
+      <p>Materi, artikel, quiz, dan konten digital seputar nutrisi anak.</p>
+      <a href="materi.html" class="btn-main">Mulai Belajar</a>
     </div>
-  </div>
+    <img src="../img/hero.png" alt="Edukasi">
+  </section>
 
-  <!-- Header -->
-  <div class="hero small">
-    <h1>Edukasi Gizi</h1>
-    <p>Artikel, Quiz, dan Konten digital untuk meningkatkan literasi gizi masyarakat</p>
-  </div>
+  <!-- KATEGORI -->
+  <section class="features">
+    <h2>Kategori Edukasi</h2>
 
-  <div class="container">
+    <div class="feature-grid grid-4">
 
-    <h2>Pilih Kategori Edukasi</h2>
+      <a href="materi.html" class="feature-card">
+        <img src="../img/info.png">
+        <h3>Materi Gizi</h3>
+        <p>Belajar nutrisi dasar.</p>
+      </a>
 
-    <div class="grid main-options">
-      <a href="materi.html" class="card option">📘 Materi Gizi</a>
-      <a href="quiz.html" class="card option">📝 Quiz Interaktif</a>
-      <a href="artikel.html" class="card option">📰 Artikel Edukasi</a>
-      <a href="konten.html" class="card option">🎥 Konten Digital</a>
+      <a href="quiz.html" class="feature-card">
+        <img src="../img/quiz.png">
+        <h3>Quiz Interaktif</h3>
+        <p>Uji pengetahuanmu.</p>
+      </a>
+
+      <a href="artikel.html" class="feature-card">
+        <img src="../img/data.png">
+        <h3>Artikel Edukasi</h3>
+        <p>Bacaan informatif.</p>
+      </a>
+
+      <a href="konten.html" class="feature-card">
+        <img src="../img/info.png">
+        <h3>Konten Digital</h3>
+        <p>Video & gambar edukasi.</p>
+      </a>
+
     </div>
+  </section>
 
-    <br>
-    <a href="../index.html" class="btn back">← Kembali</a>
-
-  </div>
-
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-content">
-      <h2 class="footer-logo-text">GiziCare</h2>
-      <p class="footer-tagline">Smart Nutrition · Better Health</p>
-
-
-      <p class="footer-copy">© 2025 GiziCare. All rights reserved.</p>
-    </div>
+    © 2025 GiziCare — Mendukung Generasi Sehat
   </footer>
 
 </body>
