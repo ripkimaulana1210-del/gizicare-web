@@ -43,14 +43,63 @@
   align-items: center;
 }
 
-.feature-card:hover {
-  transform: translateY(-6px);
-  background: #e8fff3;
+.feature-card {
+  width: 100%;
+  max-width: 330px;
+  min-height: 200px;
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  transition: 0.25s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white; /* teks agar terlihat di atas gambar */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
 }
 
-.feature-card img {
-  width: 70px;
-  margin-bottom: 12px;
+.feature-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35); /* overlay supaya teks terbaca */
+  border-radius: 18px;
+}
+
+.feature-card h3,
+.feature-card p {
+  position: relative; /* agar berada di atas overlay */
+  z-index: 1;
+}
+
+/* Background gambar per card */
+.bg-materi {
+  background-image: url('../img/materi.jpg');
+}
+
+.bg-quiz {
+  background-image: url('../img/quiz.jpg');
+}
+
+.bg-artikel {
+  background-image: url('..//img/artikel.jpg');
+}
+
+.bg-konten {
+  background-image: url('../img/konten.jpg');
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  background-blend-mode: lighten; /* opsional efek hover */
 }
 
 /* ================= RESPONSIVE ================= */
