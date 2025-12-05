@@ -45,26 +45,31 @@
         <!-- FORM INPUT -->
         <form id="giziForm" class="form-card">
 
-            <input type="text" id="nama" placeholder="Nama Balita" required>
-
-            <select id="jenis_kelamin" required>
-                <option value="">Jenis Kelamin</option>
-                <option value="L">Laki-laki</option>
-                <option value="P">Perempuan</option>
-            </select>
-
+            <div class="input-row">
+                <input type="text" id="nama" placeholder="Nama Balita" required>
+            </div>
+        
+            <div class="input-row">
+                <select id="jenis_kelamin" required>
+                    <option value="">Jenis Kelamin</option>
+                    <option value="L">Laki-laki</option>
+                    <option value="P">Perempuan</option>
+                </select>
+            </div>
+        
             <div class="input-row">
                 <input type="number" id="usia_bulan" placeholder="Usia (bulan)" required>
                 <input type="number" step="0.1" id="berat_badan" placeholder="Berat (kg)" required>
             </div>
-
+        
             <div class="input-row">
                 <input type="number" step="0.1" id="tinggi_badan" placeholder="Tinggi (cm)" required>
                 <input type="number" step="0.1" id="lingkar_kepala" placeholder="Lingkar kepala (opsional)">
             </div>
-
+        
             <button type="submit" class="btn-save">Simpan</button>
         </form>
+        
 
         <!-- TABLE -->
         <h3 class="history-title">Riwayat Data</h3>
